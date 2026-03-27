@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakshatra Inventions | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; scroll-behavior: smooth; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body>
+
+    <section id="onboarding" class="min-h-screen flex flex-col items-center justify-center p-6">
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold tracking-tighter text-blue-400 mb-2">NAKSHATRA INVENTIONS</h1>
+            <p class="text-gray-400 italic">HERE ONLY CALIBERS MATTERS</p>
+        </div>
+
+        <div class="glass-card p-8 rounded-2xl w-full max-w-md shadow-2xl">
+            <h2 class="text-xl font-semibold mb-6 text-center">Get Started</h2>
+            <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('requirement-box').classList.remove('hidden'); window.scrollTo(0, document.body.scrollHeight);">
+                <input type="text" placeholder="Full Name" required class="w-full p-3 rounded bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none">
+                <input type="email" placeholder="Gmail" required class="w-full p-3 rounded bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none">
+                <input type="tel" placeholder="WhatsApp Number" required class="w-full p-3 rounded bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none">
+                <input type="text" placeholder="Qualification" required class="w-full p-3 rounded bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none">
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 transition-colors py-3 rounded font-bold">Continue</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="requirement-box" class="hidden min-h-screen flex items-center justify-center p-6 bg-slate-900">
+        <div class="glass-card p-8 rounded-2xl w-full max-w-2xl shadow-2xl border-blue-500/30">
+            <h2 class="text-2xl font-bold mb-4 text-blue-400">Project Requirements</h2>
+            <p class="text-gray-300 mb-6">Tell us what you expect from Nakshatra Inventions and what you want to achieve.</p>
+            <textarea rows="6" placeholder="I am looking for..." class="w-full p-4 rounded bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none text-white"></textarea>
+            <button class="mt-6 px-8 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors">Submit Request</button>
+            
+            <p class="mt-10 text-center text-sm text-gray-500 animate-bounce">Scroll down to learn about us ↓</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-black">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-blue-400">About Nakshatra Inventions</h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                Nakshatra Inventions is all about AI based company in which this company provides the best calibers to get best output accordingly customer requirement.
+            </p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+                <div class="p-4 border border-slate-800 rounded">
+                    <h3 class="font-bold text-white mb-2">AI Integration</h3>
+                    <p class="text-gray-500">Cutting edge intelligence for modern problems.</p>
+                </div>
+                <div class="p-4 border border-slate-800 rounded">
+                    <h3 class="font-bold text-white mb-2">Caliber First</h3>
+                    <p class="text-gray-500">We prioritize talent and quality above all else.</p>
+                </div>
+                <div class="p-4 border border-slate-800 rounded">
+                    <h3 class="font-bold text-white mb-2">Custom Output</h3>
+                    <p class="text-gray-500">Tailored results that fit your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-xs border-t border-slate-900">
+        © 2026 Nakshatra Inventions. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
